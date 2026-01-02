@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bay Area Remodeling Companies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .company {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 4px solid #667eea;
+        }
+
+        .company:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .company-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .phone {
+            font-size: 18px;
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone::before {
+            content: "📞";
+            margin-right: 8px;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #666;
+            display: flex;
+            align-items: center;
+        }
+
+        .location::before {
+            content: "📍";
+            margin-right: 8px;
+        }
+
+        .phone a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .phone a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .company-name {
+                font-size: 18px;
+            }
+
+            .phone {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bay Area Remodeling Companies</h1>
+        <p class="subtitle">Top 3 Remodeling Contractors</p>
+
+        <div class="company">
+            <div class="company-name">Bay Area Remodeling Co.</div>
+            <div class="phone"><a href="tel:+14155551234">(415) 555-1234</a></div>
+            <div class="location">San Francisco, CA</div>
+        </div>
+
+        <div class="company">
+            <div class="company-name">Golden Gate Renovations</div>
+            <div class="phone"><a href="tel:+14085552345">(408) 555-2345</a></div>
+            <div class="location">San Jose, CA</div>
+        </div>
+
+        <div class="company">
+            <div class="company-name">Pacific Coast Remodelers</div>
+            <div class="phone"><a href="tel:+15105553456">(510) 555-3456</a></div>
+            <div class="location">Oakland, CA</div>
+        </div>
+    </div>
+</body>
+</html>
